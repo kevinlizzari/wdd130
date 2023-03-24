@@ -18,45 +18,64 @@
             <a href="gallery.html">GALLERY</a>
             <a href="information.html">Information</a>
         </nav>
+    </header>
+        <div class="header2">
+            <h3> Scroll Indicator</h3>
+            <div class="progress-container">
+                <div class="progress-bar" id="myBar"></div>
+            </div>
+        </div>
+<div id="hero">
+    <div id="background2" ></div>
+    <section id="hero-msg2">
+        <p> Small gallery of the most beautiful places in Milan </p> 
+    </section>
+</div>
 <main class="gallery-grid">
-    <div id="background2"></div>
-    <p>Small gallery of the most beautiful places in Milan</p>
-    
-    <img class="duomo" src="images/duomo.jpg" alt="Duomo image">
-    <section class="info1">
-        <h2>Duomo di Milano</h2>
-        <p>The city center, church whose construction begins in 1386 and ends in 1965. Fascinating, the attention to detail is enormous, to appreciate accurately its details, it would take days.</p>
+    <!--<div id="background2"></div>
+    <p>Small gallery of the most beautiful places in Milan</p>-->
+    <section class="duomo">
+        <img class="card-img" src="images/duomo.jpg" alt="Duomo image">
+        <section class="info1">
+            <h2>Duomo di Milano</h2>
+            <p>The city center, church whose construction begins in 1386 and ends in 1965. Fascinating, the attention to detail is enormous, to appreciate accurately its details, it would take days.</p>
+        </section>
     </section>
-
-    <img class="doorduomo" src="images/doorduomo.jpeg" alt="door image">
-    <section class="info1">
-        <p>One of the doors of the Duomo of Milan, realized in bronze, is "only" a door but it is a real work of art that tells historical religious events.</p>
+    <section class="door">
+        <img class="doorduomo" src="images/doorduomo.jpeg" alt="door image">
+        <section class="info1">
+            <h2>Door of Duomo</h2>
+            <p>One of the doors of the Duomo of Milan, realized in bronze, is "only" a door but it is a real work of art that tells historical religious events.</p>
+        </section>
     </section>
-
-    <img class="castle" src="images/castello.jpg" alt="castle image">
-    <section class="info1">
-        <h2>Castello Sforzesco</h2>
-        <p>has a great history behind it, inside you can visit museums and a huge park behind him in case you want to have a picnic.</p>
+    <section class="castle">
+        <img class="castello" src="images/castello.jpg" alt="castle image">
+        <section class="info1">
+            <h2>Castello Sforzesco</h2>
+            <p>Castle that has a great history behind it, inside you can visit museums and a huge park behind him in case you want to have a picnic.</p>
+        </section>
+    </section>  
+    <section class="statua">
+        <img class="statue" src="images/leonardo.jpg" alt="statue image">
+        <section class="info1">
+            <h2>Stutue of Leonardo da Vinci</h2>
+            <p>Leonardo da Vinci and his students, painter, designer, engineer, scientist, theorist, sculptor and architect. A Genius of the High Renaissance.</p>
+        </section>
     </section>
-
-    <img class="statue" src="images/leonardo.jpg" alt="statue image">
-    <section class="info1">
-        <h2>Stutue of Leonardo da Vinci</h2>
-        <p>Leonardo da Vinci and his students, painter, designer, engineer, scientist, theorist, sculptor and architect. A Genius of the High Renaissance.</p>
+    <section class="gallery">    
+        <img class="galleria" src="images/vittorio.jpg" alt="gallery image">
+        <section class="info1">
+            <h2>Galleria Vittorio Emanuele</h2>
+            <p>Inside we will find luxury restaurants, and big fashion brands such as Versace, Luis Vuitton, Prada. The structure is magnificent, on the ground there is also a bull, where people turn three times in its private parts to have good luck.</p>
+        </section>
     </section>
-
-    <img class="galleria" src="images/vittorio.jpg" alt="gallery image">
-    <section class="info1">
-        <h2>Galleria Vittorio Emanuele</h2>
-        <p>inside we will find luxury restaurants, and big fashion brands such as Versace, Luis Vuitton, Prada. The structure is magnificent, on the ground there is also a bull, where people turn three times in its private parts to have good luck.</p>
+    <section class="torri">    
+        <img class="towers" src="images/tretorri.jpg" alt="towers image">
+        <section class="info1">
+            <h2>Three Towers</h2>
+            <p>Milan is also a modern city, these three towers are the example, each different from the other and with a unique feature, next to there is a commercial center and a large park.</p>
+        </section>
     </section>
-
-    <img class="towers" src="images/tretorri.jpg" alt="towers image">
-    <section class="info1">
-        <h2>Three Towers</h2>
-        <p>Milan is also a modern city, these three towers are the example, each different from the other and with a unique feature, next to there is a commercial center and a large park.</p>
-    </section>
-
 </main>
 <footer>
     <p>Milano &copy; 2023 - Kevin Lizzari</p>
@@ -74,6 +93,15 @@
             <img src="images/instagram.png" alt="instagram icon">
         </a>
     </div>
+<script>
+    window.onscroll = function() {myFunction()};
+    function myFunction() {
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        document.getElementById("myBar").style.width = scrolled + "%";
+        }
+</script>
 </footer>
 </div>
 </body>
