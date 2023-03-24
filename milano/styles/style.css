@@ -132,3 +132,31 @@ footer p,
   height: 40px;
   margin-right: 10px;
 }
+/*HEADER SCROLL*/
+.header2 {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  height: 2%;
+  background-color: #eb6d47;
+}
+
+/* The progress container  */
+.progress-container {
+  width: 100%;
+  height: 3px;
+  background: #eb6d47;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 8px;
+  background: #04AA6D;
+  width: 0%;
+}
+h3{
+  font-size: 9px;
+  float: left;
+  float: top;
+}
