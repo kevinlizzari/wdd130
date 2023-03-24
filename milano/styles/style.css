@@ -65,7 +65,7 @@ nav a:hover {
 
 #background1 {
   position: absolute;
-  top: 10;
+  /*top: 10;*/
   left: 0;
   width: 100%;
   height: 50%;
@@ -156,7 +156,7 @@ footer p,
 h3{
   font-size: 9px;
   float: left;
-  float: top;
+  /*float: top; */
 }
 /*FIRST CHILD PAGE*/
 #background2 {
