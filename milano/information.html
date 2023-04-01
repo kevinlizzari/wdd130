@@ -19,18 +19,23 @@
             <a href="information.html">INFORMATION</a>
         </nav>
     </header>
+    <div class="header2">
+        <h3> Scroll Indicator</h3>
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
+    </div>
 <main class="information-grid">
     <div id="background3"></div>
     <img class="map" src="images/map.png" alt="city metro map">
-    <section class="msg">
-        <p>What vehicles do I have to take to get here? and to get here? This is the map for the Milan metro, the city is well served by public vehicles on the surface and below</p>
+    <section class="msg1">
+        <p>What vehicles do I have to take to get here? And to get here? </p>
+        <p>This the map for the Milan metro, the city is well served by public vehicles on the surface and below.</p>
     </section>
-    <div id="background3"></div>
+    <div id="background4"></div>
     <img class="bus" src="images/bus.jpg" alt="bus">
     <section class="msg">
-        <h2>More Than a Moment</h2>
-        <p>Enjoy the breathtaking scenery. From valleys, rivers, and high peaks; get away from city life and enjoy the moment accompanied by mountains, rivers, friends and family. </p>
-        <a class='join' href="rivers.html">Join Us</a>
+        <p>If you are a tourist and want to visit this beautiful city, I recommend a tourist guide. </p>
     </section>
 </main>
 <footer>
@@ -49,6 +54,15 @@
             <img src="images/instagram.png" alt="instagram icon">
         </a>
     </div>
+<script>
+    window.onscroll = function() {myFunction()};
+    function myFunction() {
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        document.getElementById("myBar").style.width = scrolled + "%";
+        }
+</script>
 </footer>
 </div>
 </body>
